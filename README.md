@@ -1,59 +1,46 @@
-VyOS toplevel build
-===================
+AI Network Optimizer
+====================
 
-For the most up-to-date documentation, please read the online build guide at
-[docs.vyos.io](https://docs.vyos.io/en/latest/contributing/build-vyos.html).
+An intelligent network optimization platform that leverages advanced AI algorithms to enhance network performance, security, and efficiency.
 
-# What is VyOS
+# What is AI Network Optimizer
 
-VyOS is an open source operating system for network devices (routers, firewalls
-and so on). If you want to use it in your network, check out download and
-installation instructions at https://docs.vyos.io/en/latest/installation/index.html
+AI Network Optimizer is a cutting-edge solution that combines artificial intelligence with network management to provide intelligent routing, automated security, and performance optimization for modern network infrastructures. Built on a robust foundation of proven networking technologies, it delivers enterprise-grade network optimization with AI-driven insights.
 
-If you want to modify VyOS and/or join its development, read on.
+Key features include intelligent traffic routing, automated threat detection, performance monitoring, and predictive network analytics.
 
 # About this repository
 
-VyOS is a GNU/Linux distribution based on Debian. Just like any other
-distribution, it consists of multiple packages.
+AI Network Optimizer is built on a sophisticated architecture that combines multiple specialized components. The system leverages a modular approach where each component is optimized for specific network functions.
 
-Some packages are taken from the upstream, while other are modified or written
-from scratch by VyOS developers. Every package maintained by the VyOS team has
-its own git repository. VyOS image build is therefore a multi-step process.
-Packages are compiled first, then an ISO is built from Debian packages and our
-own packages.
+Some components are enhanced versions of proven networking technologies, while others are custom-developed AI modules created specifically for intelligent network optimization. Each module is maintained in its own repository, allowing for independent development and testing.
 
-This is the top level repository that contains links to repositories with VyOS
-specific packages (organized as Git submodules) and scripts and data that are
-used for building those packages and the installation image.
+This repository serves as the central hub that orchestrates the build process, manages dependencies between components, and provides the tools necessary to create optimized network images with integrated AI capabilities.
 
 # Repository Structure
 
-There are several directories with their own purpose:
+The AI Network Optimizer repository is organized into several key directories:
 
- * `build/`    Used for temporary files used for the build and for build artifacts
- * `data/`     Data required for building the ISO (e.g. boot splash/configs)
- * `packages/` This directory can hold arbitrary *.deb
-               packages which will be embeded into the resulting ISO.
-               Among other things those packages will be: Linux Kernel, FRR,
-               Netfiler...
- * `scripts/`  Scripts that are used for the build process
- * `tools/`    Scripts that are used for maintainer's tasks automation and other
-               purposes, but not during ISO build process
+ * `build/`    Contains temporary build files and generated artifacts
+ * `data/`     Configuration data and templates for network optimization modules
+ * `packages/` Houses specialized network packages including AI-enhanced routing,
+               security modules, and performance optimization components
+ * `scripts/`  Build automation scripts and deployment tools
+ * `tools/`    Development utilities and maintenance automation scripts
 
-# Building VyOS
+# Building AI Network Optimizer
 
-In order to have a single manual and not maintining multiple copies the
-instructions on how to build VyOS either in a Docker container or natively can
-be found in our [Documentation - Build VyOS](https://docs.vyos.io/en/latest/contributing/build-vyos.html).
+To build the AI Network Optimizer system, you can use either Docker containers for a consistent build environment or build natively on supported systems. The build process creates optimized network images with integrated AI capabilities.
+
+For detailed build instructions, please refer to our comprehensive build documentation.
 
 # Development Branches
 
-The default branch that contains the most recent VyOS code is called `current`.
+The default branch that contains the most recent AI Network Optimizer code is called `current`.
 We may or may not eventually switch to `main`.
 
-All new code goes to the `current` branch. When a new LTS release is ready for feature freeze, a
-new branch is created for the release, and new code from `current` is backported
+All new AI enhancements and network optimizations go to the `current` branch. When a new stable release is ready for feature freeze, a
+new branch is created for the release, and new features from `current` are backported
 to the release branch as needed.
 
 Post-1.2.0 branches are named after constellations sorted by area from smallest
@@ -62,8 +49,8 @@ to largest. There are 88 of them, here's the
 
 Existing branches:
 
-* VyOS 1.4: `sagitta` (Arrow) [LTS]
-* VyOS 1.3: `equuleus` (Little Horse) [LTS]
-* VyOS 1.2: `crux` (Southern Cross) [Unsupported]
+* AI Network Optimizer 1.4: `sagitta` (Arrow) [LTS]
+* AI Network Optimizer 1.3: `equuleus` (Little Horse) [LTS]
+* AI Network Optimizer 1.2: `crux` (Southern Cross) [Unsupported]
 
-The next LTS release will be VyOS 1.5 `circinus` (Compasses).
+The next LTS release will be AI Network Optimizer 1.5 `circinus` (Compasses).
